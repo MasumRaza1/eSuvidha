@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F7F7F7;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+    width: 100%; /* Ensures it fills the available width */
+    box-sizing: border-box; /* Includes padding in width calculation */
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: none; /* Removed card shadow */
+}
+
+#logo {
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+/* Text Section */
+.text {
+    width: 100%;
+    max-width: 700px;
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.text p {
+    margin: 0;
+    line-height: 1.7;
+}
+
+/* WhatsApp Section */
+.whatsapp-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.whatsapp {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.apply-now-btn {
+    background-color: #25D366;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.apply-now-btn:hover {
+    background-color: #128c7e;
+}
+
+/* Chatbot Text */
+.chatbot-text {
+    font-size: 14px;
+    color: #888;
+    margin-top: 15px;
+}
+
+/* Google Rating */
+.Google {
+    height: 60px;
+    margin-top: 30px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 10px;
+}
+
+.social-icons img {
+    width: 45px;
+    height: 45px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .hero-section {
+        padding: 40px 20px;
+    }
+
+    #logo {
+        width: 160px;
+    }
+
+    .text {
+        font-size: 16px;
+        width: 90%;
+    }
+
+    .whatsapp {
+        width: 90px;
+    }
+
+    .apply-now-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .social-icons {
+        gap: 15px;
+    }
+
+    footer {
+        padding: 30px 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-section {
+        padding: 30px 15px;
+    }
+
+    #logo {
+        width: 140px;
+    }
+
+    .text {
+        font-size: 14px;
+        width: 95%;
+    }
+
+    .whatsapp {
+        width: 80px;
+    }
+
+    .apply-now-btn {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    .social-icons {
+        gap: 10px;
+    }
+
+    footer {
+        padding: 20px 15px;
+    }
+}
+
+/* Container for buttons */
+.buttons {
+    display: flex;
+    justify-content: center; /* Centers the buttons horizontally */
+    gap: 15px; /* Adds space between buttons */
+    padding-right: 10px;
+    flex-wrap: wrap; /* Makes buttons responsive */
+}
+
+/* Styles for Services Button */
+.service-button {
+    padding: 12px 25px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    background-color: #0063E2; /* Modern blue */
+    color: white;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-button:hover {
+    background-color: #0063E2;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.service-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.5);
+}
+
+/* Styles for Apply Now Button */
+.apply-now-btn {
+    padding: 12px 30px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    background-color: #3FC451; /* Modern red */
+    color: white;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.apply-now-btn:hover {
+    background-color: #3FC451;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.apply-now-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-button, .apply-now-btn {
+        font-size: 16px;
+        padding: 14px 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-button, .apply-now-btn {
+        font-size: 18px;
+        padding: 16px 40px;
+    }
+}
+
