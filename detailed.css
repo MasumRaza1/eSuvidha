@@ -173,14 +173,13 @@ body {
   
   .details .names {
     font-size: 0.9rem; 
-    font-weight: bold; 
+  
   }
   
   .details .date {
     font-size: 0.8rem; 
     font-style: normal; 
     padding-top: 3px;
-    font-weight: bold; 
   }
   
   .image {
